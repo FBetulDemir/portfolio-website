@@ -270,18 +270,24 @@ section {
 
 #about {
   position: relative;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
+  margin: 5em 0;
+  background-color: rgb(227, 226, 224);
 }
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin: 4em 2em;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  margin: 3em 5em;
+}
+
+.about-details-container .text-container{
+  margin-bottom: 4em;
 }
 
 .about-containers,
@@ -362,6 +368,11 @@ article .icon {
 
 #projects {
   position: relative;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project-description{
