@@ -1,194 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Betül Demir</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Betül Demir</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile.jpg" alt="Betül Demir profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Betül Demir Korkmaz</h1>
-        <p class="section__text__p2">Junior Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/betul-demir-CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/FBetulDemir'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>More than 1 year as a student<br />Frontend Development <br> UI/UX</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon.ico"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Betül Demir Korkmaz</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Frontend Developer Program <br>IT – Tech for Women Course<br />M.Sc. Masters Degree in Educational Research<br>B.Sc. Bachelors Degree in Early Childhood Education</p>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Betül Demir Korkmaz</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li>
+                        <a href="#experience" onclick="toggleMenu()">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" onclick="toggleMenu()">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="toggleMenu()">Contact</a>
+                    </li>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Passionate about front-end development, I transitioned from a teaching background to software development. 
-              My strengths lie in creating intuitive user interfaces, problem-solving, and continuous learning. While I 
-              specialize in front-end development, I also have foundational knowledge of back-end technologies, making me
-               a well-rounded team player in full-stack projects.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                    src="./assets/profile.jpg"
+                    alt="Betül Demir profile picture"
                 />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Betül</h1>
+                <p class="section__text__p2">Junior Frontend Developer</p>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2"
+                        onclick="window.open('./assets/betul-demir-CV.pdf')"
+                    >
+                        Download CV
+                    </button>
+                    <button
+                        class="btn btn-color-1"
+                        onclick="location.href='#contact'"
+                    >
+                        Contact Info
+                    </button>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                <div id="socials-container">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://linkedin.com/'"
+                    />
+                    <img
+                        src="./assets/github.png"
+                        alt="My Github profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/FBetulDemir'"
+                    />
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img
+                                src="./assets/experience.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>
+                                More than 1 year as a student<br />Frontend
+                                Development <br />
+                                UI/UX
+                            </p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                                src="./assets/education.png"
+                                alt="Education icon"
+                                class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>
+                                Frontend Developer Program <br />IT – Tech for
+                                Women Course<br />M.Sc. Masters Degree in
+                                Educational Research<br />B.Sc. Bachelors Degree
+                                in Early Childhood Education
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Passionate about front-end development, I
+                            transitioned from a teaching background to software
+                            development. My strengths lie in creating intuitive
+                            user interfaces, problem-solving, and continuous
+                            learning. While I specialize in front-end
+                            development, I also have foundational knowledge of
+                            back-end technologies, making me a well-rounded team
+                            player in full-stack projects.
+                        </p>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <!-- <article>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#experience'"
+            />
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Skills</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">
+                            Frontend Development
+                        </h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>SASS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>React</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Bootstrap</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <!-- <article>
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -199,145 +230,157 @@
                   <p>Intermediate</p>
                 </div>
               </article> -->
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Complementary</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VS Code</h3>
-                  <p>Experienced</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Complementary</h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>VS Code</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Figma</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Git/GitHub</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Agile Work</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Node.js</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Express</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git/GitHub</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Agile Work</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node.js</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
             </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers projects-grid">
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/food-truck.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Food Delivery App</h2>
-            <p class="project-description">In this project, I have recreated a Figma design by using HTML, CSS and JavaScript. Menu, tenants, receipts are fetched dynamically from an API.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/bhromaon_website.git '"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://food-truck-delivery-app.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/shopping-list.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Shopping List</h2>
-            <p class="project-description">In this project, I have created a interactive Shopping List App in which user can add/remove items to the shopping list, by using HTML, CSS, JavaScript and Google Firebase.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/shopping-list.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://betuls-shopping-list.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <!-- <div class="details-container color-container">
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#projects'"
+            />
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers projects-grid">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/food-truck.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Food Delivery App
+                        </h2>
+                        <p class="project-description">
+                            In this project, I have recreated a Figma design by
+                            using HTML, CSS and JavaScript. Menu, tenants,
+                            receipts are fetched dynamically from an API.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/bhromaon_website.git '"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://food-truck-delivery-app.netlify.app/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/shopping-list.png"
+                                alt="Project 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Shopping List
+                        </h2>
+                        <p class="project-description">
+                            In this project, I have created a interactive
+                            Shopping List App in which user can add/remove items
+                            to the shopping list, by using HTML, CSS, JavaScript
+                            and Google Firebase.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/shopping-list.git'"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://betuls-shopping-list.netlify.app/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/project_3.png"
@@ -362,166 +405,209 @@
               </button>
             </div>
           </div> -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/memory-game.png"
-                alt="Project 2"
-                class="project-img"
-              />
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/memory-game.png"
+                                alt="Project 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Memory Game
+                        </h2>
+                        <p class="project-description">
+                            In this project, I have created a Memory Game by
+                            using React.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://betuls-memory-game.netlify.app/'"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/memory_game.git'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project_1.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Bhromaon Website
+                        </h2>
+                        <p class="project-description">
+                            In this project, I have recreated a Figma design by
+                            using HTML and SCSS.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/bhromaon_website.git '"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://fbetuldemir.github.io/bhromaon_website/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Memory Game</h2>
-            <p class="project-description">In this project, I have created a Memory Game by using React.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://betuls-memory-game.netlify.app/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/memory_game.git'"
-              >
-                Live Demo
-              </button>
+            <p class="section__text__p1">
+                Browse Recent Projects I collaborated
+            </p>
+            <h1 class="title">Group Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers projects-grid">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/event-manager.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Event Manager App
+                        </h2>
+                        <p class="project-description">
+                            Collaborative project where I developed the Landing
+                            Page to dynamically display user-created events.
+                            Integrated the frontend with a MongoDB-powered
+                            backend using Express.js and Node.js for real-time
+                            data retrieval. Built with React, TypeScript, and
+                            Vite, ensuring a responsive and visually engaging
+                            user experience.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/event-manager.git'"
+                            >
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/weather-dashboard.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Local Travel and Weather Dashboard
+                        </h2>
+                        <p class="project-description">
+                            Collaborative project where I developed a weather
+                            forecast part with real-time data fetching using the
+                            OpenWeather API, React, TypeScript, Vite.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/local-insights.git'"
+                            >
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/hangman.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Hangman Game
+                        </h2>
+                        <p class="project-description">
+                            Collaborative project where I developed key
+                            functionalities for a Hangman game, including
+                            keyboard event handling, win/loss logic, and
+                            high-score storage using localStorage. Implemented
+                            an interactive end-screen to display top scores
+                            dynamically. Built with HTML, CSS, and JavaScript,
+                            ensuring a responsive and engaging user experience.
+                        </p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/FBetulDemir/hangman-game-group-project.git'"
+                            >
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project_1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#contact'"
+            />
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img
+                        src="./assets/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p>
+                        <a href="mailto:examplemail@gmail.com"
+                            >fatmabetuld@gmail.com</a
+                        >
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                    />
+                    <p>
+                        <a href="https://www.linkedin.com" target="_blank"
+                            >LinkedIn</a
+                        >
+                    </p>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Bhromaon Website</h2>
-            <p class="project-description">In this project, I have recreated a Figma design by using HTML and SCSS.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/bhromaon_website.git '"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://fbetuldemir.github.io/bhromaon_website/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="section__text__p1">Browse Recent Projects I collaborated</p>
-      <h1 class="title"> Group Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers projects-grid">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/event-manager.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Event Manager App</h2>
-            <p class="project-description">Collaborative project where I developed the Landing Page to dynamically display user-created events. Integrated the frontend with a MongoDB-powered backend using Express.js and Node.js for real-time data retrieval. Built with React, TypeScript, and Vite, ensuring a responsive and visually engaging user experience.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/event-manager.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/weather-dashboard.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Local Travel and Weather Dashboard</h2>
-            <p class="project-description">Collaborative project where I developed a weather forecast part with real-time data fetching
-              using the OpenWeather API, React, TypeScript, Vite.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/local-insights.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/hangman.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Hangman Game</h2>
-            <p class="project-description">Collaborative project where I developed key functionalities for a Hangman game, including keyboard event handling, win/loss logic, and high-score storage using localStorage. 
-              Implemented an interactive end-screen to display top scores dynamically. 
-              Built with HTML, CSS, and JavaScript, ensuring a responsive and engaging user experience.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/FBetulDemir/hangman-game-group-project.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">fatmabetuld@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Betül Demir. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <p>Copyright &#169; 2024 Betül Demir. All Rights Reserved.</p> -->
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
